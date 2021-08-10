@@ -1,70 +1,196 @@
-    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-     :root {
-        --bgcolor: #fff;
-        --txtcolor: #9d9d9d;
-        --h1txtcolor: #2f2e2e;
-        --white: #fff;
-        --gray: #7a7a7a;
-        --text: #767676;
-        --darktext: #110e20;
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style-type: none;
-        font-family: 'Rajdhani', sans-serif;
-    }
-    
-    body {
-        padding-bottom: 600px;
-    }
-    
-    .center {
-        margin: 0 auto;
-        max-width: 1200px;
-        padding: 0 20px;
-    }
-    
-    .marginLeft {
-        margin-left: 65px;
-    }
-    
-    .flexBlock {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /*linetop - header*/
-    
-    .linetop {
-        height: 145px;
-        /* background-color: red; */
-    }
-    
-    .linetop .logo {
-        background: url(../img/logo.png) no-repeat;
-        width: 145px;
-        height: 145px;
-        display: block;
-        text-indent: -9999px;
-    }
-    
-    .linetop nav {
-        flex: auto;
-        padding-left: 550px;
-        padding-right: 55px;
-    }
-    
-    .linetop nav ul a {
-        color: var(--txtcolor);
-        font-size: 20px;
-    }
-    
-    .linetop nav ul a:hover {
-        color: var(--gray);
-        font-size: 20px;
-        font-weight: bold;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+ :root {
+    --bgcolor: #fff;
+    --txtcolor: #9d9d9d;
+    --h1txtcolor: #2f2e2e;
+    --buttoncolor: #ce0627;
+    --buttoncolor2: #fff;
+    --buttontextcolor: #fff;
+    --borderColor: #ce0627;
+    --bgColor2: #131313;
+    --graytext: #585858;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    padding-bottom: 600px;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.marginLeft {
+    margin-left: 60px;
+}
+
+.marginTop55 {
+    margin-top: 55px;
+}
+
+.marginTop78 {
+    margin-top: 55px;
+}
+
+.flexBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*linetop - header*/
+
+.linetop {
+    height: 145px;
+    /* background-color: red; */
+}
+
+.linetop .logo {
+    background: url(../img/logo.png) no-repeat;
+    width: 145px;
+    height: 145px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.linetop nav {
+    flex: auto;
+    padding-left: 550px;
+    padding-right: 55px;
+}
+
+.linetop nav ul a {
+    color: var(--txtcolor);
+    font-size: 20px;
+}
+
+.linetop nav ul a:hover {
+    color: var(--gray);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.linetop .social li+li {
+    margin-left: 20px;
+}
+
+
+/*Article - section*/
+
+.article {
+    padding-top: 170px;
+    background-image: (url(../img/man.png) no-repeat right);
+}
+
+.article h1 {
+    font-size: 90px;
+}
+
+.article h3 {
+    font-size: 36px;
+    color: var(--txtcolor);
+}
+
+.emptySpace {
+    height: 75px;
+}
+
+.article p {
+    width: 585px;
+    font-size: 18px;
+    color: var(--txtcolor);
+}
+
+.article .firstBtn {
+    height: 60px;
+    width: 200px;
+    padding-top: 60px;
+    background-color: var(--buttoncolor);
+    border: none;
+    color: var(--buttontextcolor);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.article .secondBtn {
+    height: 60px;
+    width: 200px;
+    padding-top: 60px;
+    background-color: var(--buttoncolor2);
+    border: 2p;
+    color: var(--h1txtcolor);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 20px;
+    border-color: red;
+}
+
+.article .firstBtn:hover {
+    background-color: red;
+}
+
+.article .secondBtn:hover {
+    background-color: red;
+}
+
+.article .borderBottom {
+    margin-bottom: 2px;
+    background-color: var(--borderColor);
+}
+
+.article span {
+    background-image: url(../img/man.png) no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+}
+
+
+/*banner - section*/
+
+.banner {
+    background: linear-gradient(to top, var(--bgColor2) 50%, #fff 50%);
+    height: 534px;
+}
+
+.banner .logo {
+    background: url(../img/logoHD.png) no-repeat;
+    background-position: bottom left;
+    width: 425px;
+    height: 425px;
+    display: block;
+    text-indent: -9999px;
+    padding-bottom: 50px;
+}
+
+.banner span {
+    color: #fff;
+    flex: auto;
+    font-size: 90px;
+}
+
+.banner span::before {
+    content: "|";
+    color: var(--buttoncolor);
+    font-weight: bold;
+}
+
+.banner span p {
+    font-size: 18px;
+    color: var(--h1txtcolor);
+}
