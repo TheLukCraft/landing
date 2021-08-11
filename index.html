@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -47,7 +49,7 @@
         </div>
     </header>
     <section>
-        <div class="article center marginTop100">
+        <div class="article center marginTop100 transition">
             <div class="image">
                 <h1>
                     OGARNIA CIĘ FURIA?
@@ -64,21 +66,23 @@
 
     </section>
     <section>
-        <span class="center banner flexBlock">
+        <div class="bg">
+            <span class="center banner flexBlock">
                 <span class="logo"></span>
-        <span>
+            <span>
             1
             <p>Pokój furii</p>
         </span>
-        <span>
+            <span>
             9
             <p>Narzędzia zniszczenia</p>
         </span>
-        <span>
+            <span>
             360
             <p>Sekund agresji</p>
         </span>
-        </span>
+            </span>
+        </div>
     </section>
     <section>
         <div class="aboutUs center marginTop100">
@@ -106,22 +110,25 @@
         </div>
     </section>
     <section>
-        <div class="offer center marginTop100">
-            <h3 class="paddingTop70">Oferta
-                <span class=" break ">|</span>
-                <span class="h3Text ">
+        <div class="bg2">
+            <div class="offer center marginTop100">
+                <h3 class="paddingTop70">Oferta
+                    <span class=" break ">|</span>
+                    <span class="h3Text ">
                     Przygotowana dla Ciebie
                 </span>
-            </h3>
-            <h5 class="subText ">Lorem ipsum dolor sit amet</h4>
-                <div class="flexBlock content">
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                    <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
-                </div>
+                </h3>
+                <h5 class="subText ">Lorem ipsum dolor sit amet</h4>
+                    <div class="flexBlock content">
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                        <p><i class="fa fa-check"></i>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+            </div>
         </div>
     </section>
     <section>
@@ -135,10 +142,11 @@
             <h5 class="subText ">Lorem ipsum dolor sit amet</h4>
                 <div class="info marginTop78 flexBlock ">
                     <img src="img/map.png " alt=" " />
-                    <i class="fas fa-home "><p>Ustrzycka 9, Warszawa</p></i>
-
-                    <span class="telephone "><p>+48 111 222 333</p></span>
-                    <p class="hours ">Godziny otwarcia: <span>8:00 - 16:00</span></p>
+                    <div class="details">
+                        <p><i class="fa fa-home"></i>Ustrzycka 9, Warszawa</p>
+                        <p class="marginTop40 underline"><i class="fa fa-phone"></i>+48 111 222 333</p>
+                        <p class="marginTop78">Godziny otwarcia: <strong>8:00 - 16:00</strong></p>
+                    </div>
                 </div>
     </section>
     <footer class="marginTop100 ">
