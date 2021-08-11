@@ -34,12 +34,16 @@ body {
     margin-left: 60px;
 }
 
+.marginTop40 {
+    margin-top: 40px;
+}
+
 .marginTop55 {
     margin-top: 55px;
 }
 
 .marginTop78 {
-    margin-top: 55px;
+    margin-top: 78px;
 }
 
 .marginTop100 {
@@ -48,6 +52,10 @@ body {
 
 .marginTop130 {
     margin-top: 130px;
+}
+
+.paddingTop70 {
+    padding-top: 70px;
 }
 
 .flexBlock {
@@ -120,8 +128,12 @@ h3 {
 /*Article - section*/
 
 .article {
-    padding-top: 170px;
-    background-image: (url(../img/man.png) no-repeat right);
+    padding-top: 0px;
+    background-image: url(../img/man.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 .article h1 {
@@ -131,6 +143,7 @@ h3 {
 .article h3 {
     font-size: 36px;
     color: var(--txtcolor);
+    text-align: left;
 }
 
 .emptySpace {
@@ -186,9 +199,9 @@ h3 {
 }
 
 .article span {
-    background-image: url(../img/man.png) no-repeat;
-    background-position: right bottom;
-    background-size: auto;
+    background-image: url(../img/man.png);
+    height: 240px;
+    width: 240px;
 }
 
 
@@ -231,7 +244,11 @@ h3 {
 /*About us - section*/
 
 .motivateTxt {
-    max-width: 1200px;
+    background-image: url(../img/angry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .motivateTxt p {
@@ -246,10 +263,46 @@ h3 {
 
 .motivateTxt .left {
     max-width: 360px;
+    justify-content: left;
 }
 
-.motivateTxt .Right {
+.motivateTxt .right {
     max-width: 360px;
+    margin-left: 470px;
+    justify-content: right;
+}
+
+
+/*Offer - section*/
+
+.offer {
+    background-color: #242424;
+    height: 470px;
+}
+
+.offer h3 {
+    color: var(--bgcolor)
+}
+
+.offer p {
+    font-size: 18px;
+    color: var(--graytext);
+    text-align: left;
+    padding-top: 75px;
+    border-bottom: 1px solid var(--bgColor2);
+    padding-bottom: 10px;
+}
+
+.offer .content {
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+.offer .fa-check {
+    font-size: 18px;
+    color: var(--borderColor);
+    margin-right: 30px;
 }
 
 
